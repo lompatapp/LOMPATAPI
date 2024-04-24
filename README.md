@@ -1,7 +1,6 @@
-# LOMPAT Email Validation API Documentation
+# Lompat Email Validation API Documentation
 
-Welcome to the Email Validation API, a comprehensive tool designed to enhance your email data quality through a series of validations, predictions, and checks. Our API covers a wide range of features from basic format checks to detailed analyses including domain age, provider type, and much more.
-
+Welcome to the Lompat Email Validation API, a comprehensive tool designed to enhance your email data quality through a series of validations, predictions, and checks. Our API covers a wide range of features from basic format checks to detailed analyses including domain age, provider type, and much more.
 
 ## Getting Started
 
@@ -9,6 +8,15 @@ Welcome to the Email Validation API, a comprehensive tool designed to enhance yo
 2. **Make a request**: Use the sample JSON requests above as a template. Customize the parameters according to your needs.
 3. **Handle the response**: Implement logic in your application to handle and utilize the JSON data returned from the API.
 
+## Pricing
+
+Our Email Validation API is offered at a flat rate of **$55 per month**. This plan includes unlimited email validations, allowing you to check as many emails as needed without any additional charges. This pricing structure is designed to be simple and predictable, making it easy for businesses of all sizes to budget for their email validation needs.
+
+### What's Included:
+
+- **Unlimited Email Validations**: Validate as many emails as you need each month without worrying about per-email costs.
+- **Full Access to All Features**: Enjoy access to all the features listed in our documentation, including basic validations, domain checks, and advanced analytics like domain age and social media presence verifications.
+- **No Hidden Fees**: The monthly fee is all-inclusive. There are no setup fees or hidden charges.
 
 ## API Base URL
 
