@@ -1,4 +1,4 @@
-# Email Validation API Documentation
+# LOMPAT Email Validation API Documentation
 
 Welcome to the Email Validation API, a comprehensive tool designed to enhance your email data quality through a series of validations, predictions, and checks. Our API covers a wide range of features from basic format checks to detailed analyses including domain age, provider type, and much more.
 
