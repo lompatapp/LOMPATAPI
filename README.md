@@ -245,6 +245,143 @@ func main() {
 }
 ```
 
+### JavaScript
+
+Using the Fetch API to send a POST request from a client-side application:
+
+```javascript
+const url = 'https://lompat.app/v/1/';
+const data = {
+  email: 'lompat.user@lompat.app',
+  key: 'your_api_key'
+};
+
+fetch(url, {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify(data)
+})
+.then(response => response.json())
+.then(data => console.log('Success:', data))
+.catch((error) => console.error('Error:', error));
+```
+
+### Java
+
+Using `HttpURLConnection` to send a POST request:
+
+```java
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
+
+public class Main {
+    public static void main(String[] args) {
+        String data = "{\"email\":\"lompat.user@lompat.app\", \"key\":\"your_api_key\"}";
+        try {
+            URL url = new URL("https://lompat.app/v/1/");
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+            con.setRequestMethod("POST");
+            con.setRequestProperty("Content-Type", "application/json; utf-8");
+            con.setDoOutput(true);
+
+            try(OutputStream os = con.getOutputStream()) {
+                byte[] input = data.getBytes(StandardCharsets.UTF_8);
+                os.write(input, 0, input.length);
+            }
+
+            System.out.println(con.getResponseCode() + " " + con.getResponseMessage());
+            con.disconnect();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+### Ruby
+
+Using `net/http` to send a POST request:
+
+```ruby
+require 'net/http'
+require 'uri'
+require 'json'
+
+uri = URI.parse("https://lompat.app/v/1/")
+header = {'Content-Type': 'application/json'}
+data = {email: 'lompat.user@lompat.app', key: 'your_api_key'}
+
+http = Net::HTTP.new(uri.host, uri.port)
+http.use_ssl = true
+request = Net::HTTP::Post.new(uri.request_uri, header)
+request.body = data.to_json
+
+response = http.request(request)
+puts response.body
+```
+
+### C#
+
+Using `HttpClient` to send a POST request:
+
+```csharp
+using System;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
+
+public class Program
+{
+    public static async Task Main()
+    {
+        var url = "https://lompat.app/v/1/";
+        var data = new StringContent("{\"email\":\"lompat.user@lompat.app\", \"key\":\"your_api_key\"}", Encoding.UTF8, "application/json");
+
+        using (var httpClient = new HttpClient())
+        {
+            HttpResponseMessage response = await httpClient.PostAsync(url, data);
+            string result = await response.Content.ReadAsStringAsync();
+            Console.WriteLine(result);
+        }
+    }
+}
+```
+
+### C++
+
+Using `CURL` library to send a POST request (Note: Requires libcurl):
+
+```cpp
+#include <iostream>
+#include <curl/curl.h>
+#include <string>
+
+int main() {
+    CURL *curl;
+    CURLcode res;
+    std::string readBuffer;
+    std::string data = "{\"email\":\"lompat.user@lompat.app\", \"key\":\"your_api_key\"}";
+
+    curl = curl_easy_init();
+    if(curl) {
+        curl_easy_setopt(curl, CURLOPT_URL, "https://lompat.app/v/1/");
+        curl_easy_setopt(curl, CURLOPT_POSTFIELDS, data.c_str());
+        curl_easy_setopt(curl, CURLOPT_POSTFIELDSIZE, (long)data.size());
+
+        res = curl_easy_perform(curl);
+        if(res != CURLE_OK)
+            fprintf(stderr, "curl_easy_perform() failed: %s\n", curl_easy_strerror(res));
+
+        curl_easy_cleanup(curl);
+    }
+    return 0;
+}
+```
+
 These examples provide practical guidance on integrating the Email Validation API into various applications, catering to a broad range of popular programming languages and frameworks.
 
 
