@@ -37,7 +37,7 @@ Our API offers the following features:
 - **Domain Information**: Retrieves domain age and MX records.
 - **Catch-All Detection**: Determines if the domain has a catch-all policy for emails.
 - **Gender Detection**: Predicts the gender based on the first name extracted from the email.
-- **Social Media Checks**: Validates presence on LinkedIn.
+- **Social Media Checks**: Validates presence on LinkedIn,Microsoft, and Twitter.
 
 ## API Response Format
 
@@ -93,6 +93,18 @@ To verify if the email is valid for Microsoft services:
 {
   "email": "lompat.user@lompat.app",
   "microsoft": "true",
+  "key": "your_api_key"
+}
+```
+
+### Twitter Email Check
+
+To verify if the email is valid for Microsoft services:
+
+```json
+{
+  "email": "lompat.user@lompat.app",
+  "twitter": "true",
   "key": "your_api_key"
 }
 ```
