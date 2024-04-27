@@ -37,6 +37,7 @@ Our API offers the following features:
 - **Domain Information**: Retrieves domain age and MX records.
 - **Catch-All Detection**: Determines if the domain has a catch-all policy for emails.
 - **Gender Detection**: Predicts the gender based on the first name extracted from the email.
+- **Quota**: Detect if the mailbox quota is full
 - **Social Media Checks**: Validates presence on LinkedIn, Microsoft, and Twitter.
 
 ## API Response Format
