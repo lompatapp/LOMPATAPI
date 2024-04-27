@@ -4,7 +4,7 @@ Welcome to the Lompat Email Validation API, a comprehensive tool designed to enh
 
 ## Getting Started
 
-1. **Get your API key**: Contact us to receive your unique API key necessary to access the API.
+1. **Get your API key**: You can get your unique API key necessary to access the API from our site at [https://lompat.app](https://lompat.app).
 2. **Make a request**: Use the sample JSON requests above as a template. Customize the parameters according to your needs.
 3. **Handle the response**: Implement logic in your application to handle and utilize the JSON data returned from the API.
 
