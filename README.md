@@ -114,6 +114,30 @@ To verify if the email is valid for Twitter account:
 
 Here are some quick examples on how to use the Email Validation API with different programming languages and frameworks:
 
+### Bash
+
+Using cURL from the command line in Bash:
+
+```bash
+#!/bin/bash
+
+# API URL
+url="https://lompat.app/v/1/"
+
+# Data payload
+data='{
+  "email": "lompat.user@lompat.app",
+  "key": "your_api_key"
+}'
+
+# Send the POST request
+response=$(curl -s -X POST "$url" -H "Content-Type: application/json" -d "$data")
+
+# Output the response
+echo "Response:"
+echo "$response"
+```
+
 ### PHP
 
 Using cURL to make a POST request:
