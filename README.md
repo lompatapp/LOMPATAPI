@@ -28,7 +28,7 @@ Our API offers the following features:
 - **Catch-All Detection**: Determines if the domain has a catch-all policy for emails.
 - **Gender Detection**: Predicts the gender based on the first name extracted from the email.
 - **Quota**: Detect if the mailbox quota is full
-- **Social Media Checks**: Validates presence on LinkedIn, Microsoft, and Twitter.
+- **Social Media Checks**: Validates presence on Microsoft.
 
 ## API Response Format
 
@@ -64,18 +64,6 @@ To use the Email Validation API, send a JSON POST request to our endpoint. Below
 }
 ```
 
-### LinkedIn Validation Request
-
-To check if the email is associated with a LinkedIn account:
-
-```json
-{
-  "email": "lompat.user@lompat.app",
-  "linkedin": "true",
-  "key": "your_api_key"
-}
-```
-
 ### Microsoft Email Check
 
 To verify if the email is valid for Microsoft services:
@@ -88,14 +76,14 @@ To verify if the email is valid for Microsoft services:
 }
 ```
 
-### Twitter Email Check
+### FREE Email Check
 
-To verify if the email is valid for Twitter account:
+To Seperate Free Email Provider:
 
 ```json
 {
   "email": "lompat.user@lompat.app",
-  "twitter": "true",
+  "free": "true",
   "key": "your_api_key"
 }
 ```
