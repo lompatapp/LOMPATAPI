@@ -390,6 +390,6 @@ These examples provide practical guidance on integrating the Email Validation AP
 
 ## Need Help?
 
-If you have any questions or need further assistance, please reach out to our support team at jhon@lompat.app.
+If you have any questions or need further assistance, please reach out to our support team at support@lompat.app.
 
 We look forward to seeing what you'll build with our Email Validation API!
